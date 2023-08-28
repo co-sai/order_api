@@ -14,7 +14,7 @@ Once MongoDB is installed, make sure to start the MongoDB service or server.
 
 ## Installation
 
-To install the necessary packages, please use yarn:
+To install the necessary packages, please use npm:
 
 ```bash
   npm install
