@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "31c2df08-4b62-4313-bea2-150623f50c73",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22017379",
+		"_collection_link": "https://galactic-eclipse-381168.postman.co/workspace/Digital-Campus~839b74d5-0068-4165-8bf6-d0987c570fb9/collection/22017379-31c2df08-4b62-4313-bea2-150623f50c73?action=share&creator=22017379&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Create Orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"aung aung\",\n    \"phone\": \"0987654321\",\n    \"address\": \"kpay\",\n    \"status\": \"Order Requested\",\n    \"shippingFee\": 2000,\n    \"items\": [\n        {\n            \"name\": \"Product 1\",\n            \"price\": 1000,\n            \"image\": \"base64\",\n            \"size\": \"1 kg\",\n            \"quantity\": 3\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/orders/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"orders",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
